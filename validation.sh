@@ -8,7 +8,7 @@ for i in "${myarr[@]}"
 do
    :
   #echo $i
-  if [[ " ${arr[*]} " == *" $i "* ]]; then
-    echo "$i is an approved action"
+  if [[ " ${arr[*]} " != *" $i "* ]]; then
+    echo "$i is not an approved action"
   fi
 done
